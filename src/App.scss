@@ -1,0 +1,73 @@
+$primary-color: #202833;
+$text-color: white;
+$text-sizes: (
+  "sm": 12,
+  "md": 16px,
+  "lg": 22px,
+  "xl": 30px,
+  "2xl": 48px,
+);
+$padding-sizes: (
+  "sm": 12px,
+  "md": 16px,
+  "lg": 22px,
+  "xl": 30px,
+  "2xl": 48px,
+);
+@mixin flexCenter($justify, $align, $direction){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+@function text-sizes($text-name) {
+  @return map-get($text-sizes, $text-name);
+}
+@function padding-size($padding-name) {
+  @return map-get($padding-sizes, $padding-name);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-color;
+}
+.nav {
+  width: 100%;
+  height: fit-content;
+  padding: padding-size(sm) padding-size(md);
+  color: $text-color;
+    @include flexCenter(space-between, center, row);
+  & .nav_link {
+    & .nav_anchor {
+      color: $text-color;
+      font-size: text-sizes(sm);
+      text-decoration: none;
+    }
+  }
+  & .nav_icon {
+    width: 40px;
+    height: 20px;
+    @include flexCenter(space-between,end ,column);
+    &_line{
+        width: 39px;
+        height: 2px;
+        border-radius: 6px;
+        background-color: $text-color;
+    }
+    & .line_2{
+        width: 30px;
+    }
+    & .line_3{
+        width: 23px;
+    }
+
+  }
+}
