@@ -21,6 +21,9 @@ function NavBar() {
         <div className={click ? "line_2_click" : "nav_icon_line line_2"} />
         <div className={click ? "line_3_click" : "nav_icon_line line_3"} />
       </div>
+      <div className={click ? "drop_down_click" : "drop_down"}>
+        
+      </div>
     </nav>
   );
 }
