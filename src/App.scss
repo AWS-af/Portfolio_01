@@ -1,11 +1,11 @@
 $primary-color: #202833;
 $text-color: white;
 $text-sizes: (
-  "sm": 12,
+  "sm": 12px,
   "md": 16px,
-  "lg": 22px,
+  "lg": 20px,
   "xl": 30px,
-  "2xl": 48px,
+  "xxl": 48px,
 );
 $padding-sizes: (
   "sm": 12px,
@@ -38,17 +38,24 @@ $padding-sizes: (
 body {
   font-family: "Roboto", sans-serif;
   background-color: $primary-color;
+  .main {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
 }
+
+/* NAVBAR STARTS HERE */
+
 .nav {
   width: 100%;
   height: fit-content;
-  padding: padding-size(sm) padding-size(md);
+  padding: padding-size(md);
   color: $text-color;
   @include flexCenter(space-between, center, row);
   & .nav_link {
     & .nav_anchor {
       color: $text-color;
-      font-size: text-sizes(sm);
+      font-size: text-sizes(md);
       text-decoration: none;
     }
   }
@@ -92,7 +99,7 @@ body {
       transition: all 400ms ease-in-out;
     }
   }
-  & .drop_down{
+  & .drop_down {
     width: 10%;
     height: 100px;
     background: #00000029;
@@ -102,13 +109,75 @@ body {
     border-radius: 100px;
     transition: all 400ms ease-in-out;
   }
-  & .drop_down_click{
+  & .drop_down_click {
     width: 100%;
     height: 100vh;
     background: #00000029;
     position: absolute;
     left: 0%;
     top: 0px;
-    transition: all 400ms  ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+}
+/* MAIN STARTS HERE */
+
+.hero {
+  width: 100%;
+  height: fit-content;
+  color: $text-color;
+  position: relative;
+  &_container {
+    width: 100%;
+    height: fit-content;
+    @include flexCenter(center, start, column);
+    gap: 40px;
+    padding: padding-size(md);
+    margin: 130px 0;
+    & .hero_info {
+      max-width: 560px;
+      &_title {
+        font-size: text-sizes(xl);
+      }
+      &_bio {
+        margin-top: 12px;
+        font-size: text-sizes(lg);
+      }
+    }
+    & .hero_pic {
+      width: 180px;
+      height: 180px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto;
+      background-image: url('./assets/e05d4cedd80fdebc83051444e25801c1.jpg');
+      background-position: center;
+      background-size: cover;
+      &_img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  & &_down_arrow {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    font-size: text-sizes(xl);
+  }
+}
+@media (min-width: 769px) {
+  .nav {
+    padding: padding-size(lg) padding-size(xl);
+  }
+  .hero {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 980px) {
+  .hero {
+    &_container {
+      @include flexCenter(space-between, center, row);
+    }
   }
 }
