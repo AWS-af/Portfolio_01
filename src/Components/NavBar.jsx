@@ -11,6 +11,7 @@ function NavBar() {
     },[])
   return (
     <nav className="nav">
+      <div className="nav_bg_svg" />
       <div className="nav_link">
         <a href="https://github.com/AWS-af" className="nav_anchor">
           &lt; &#47; Abdul Wali Siddiqui &gt;
