@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact, FaSass } from "react-icons/fa";
 
 function Projects() {
+
+  const [click, setClick] = useState(false);
+  function clicking(){
+    setClick(prev => !prev);
+  }
+  useEffect(()=>{
+    clicking();
+  },[])
+
+
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h3 className="projects_title">Some of My Projects</h3>
       <div className="projects_container">
         <div className="warper">

@@ -5,7 +5,7 @@ import { DiJavascript } from "react-icons/di";
 
 function AboutMe() {
   return (
-    <section className="about">
+    <section className="about" id="about-me">
       <div className="about_container">
         <div className="about_info">
           <h2 className="about_header">About Me</h2>

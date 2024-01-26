@@ -4,7 +4,8 @@ import NavBar from "./Components/NavBar";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import AboutMe from "./Components/AboutMe";
-import svg from './assets/layered-steps.svg'
+import bg from './assets/vecteezy_distressed-overlay-texture-grunge-background-black-white_20116203.jpg'
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Projects />
         <AboutMe />
+        <Footer />
       </main>
     </>
   );
