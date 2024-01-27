@@ -127,10 +127,14 @@ body {
       height: 100%;
       @include flexCenter(center, center, column );
       gap: 40px;
-      font-size: text-sizes(xl);
+      font-size: text-sizes(md);
+      font-weight: bolder;
       & a{
         text-decoration: none;
         color: $text-color;
+        &:hover{
+          color: rgb(125, 125, 125);
+        }
       }
     }
   }

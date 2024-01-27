@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <nav className="nav" id="home">
       <div className="nav_link">
-        <a href="https://github.com/AWS-af" className="nav_anchor">
+        <a href="https://github.com/AWS-af" className="nav_anchor" target="_blank">
           &lt; &#47; Abdul Wali Siddiqui &gt;
         </a>
       </div>
