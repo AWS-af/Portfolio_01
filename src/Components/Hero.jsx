@@ -3,7 +3,7 @@ import { FaAngleDown, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
+    <section className="hero">
       <div className="hero_container">
         <div className="hero_info">
           <h1 className="hero_info_title">

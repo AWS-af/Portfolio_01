@@ -10,8 +10,7 @@ function NavBar() {
         clicking();
     },[])
   return (
-    <nav className="nav">
-      <div className="nav_bg_svg" />
+    <nav className="nav" id="home">
       <div className="nav_link">
         <a href="https://github.com/AWS-af" className="nav_anchor">
           &lt; &#47; Abdul Wali Siddiqui &gt;
@@ -23,7 +22,12 @@ function NavBar() {
         <div className={click ? "line_3_click" : "nav_icon_line line_3"} />
       </div>
       <div className={click ? "drop_down_click" : "drop_down"}>
-        
+        <div className="drop_down_container">
+          <a href="#home" onClick={()=> setClick(false)}>Home</a>
+          <a href="#projects" onClick={()=> setClick(false)}>Projects</a>
+          <a href="#about-me" onClick={()=> setClick(false)}>About me</a>
+          <a href="#contact" onClick={()=> setClick(false)}>Contact</a>
+        </div>
       </div>
     </nav>
   );
