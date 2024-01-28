@@ -33,9 +33,10 @@ function Projects() {
                 pro_1 ? "project_info_click project_info" : "project_info"
               }
             >
-              <h3 className="project_title">Title</h3>
+              <h3 className="project_title">ToDo App</h3>
               <p className="project_bio">
-                Some information about the project i did.
+                Simple todo app that can help you keep track of your daily
+                plans, simply create, edit, mark as finished or delete a plan.
               </p>
               <div className="project_languages">
                 <span>
