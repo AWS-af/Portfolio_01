@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <main className="main">
-        <img src={bg} alt="" className="bg_img" />
+        <img src={bg} className="bg_img" />
         <NavBar />
         <Hero />
         <Projects />

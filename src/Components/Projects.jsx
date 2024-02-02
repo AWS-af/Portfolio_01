@@ -1,25 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { RiJavascriptFill } from "react-icons/ri";
-import { FaReact, FaSass } from "react-icons/fa";
-import { MdClose } from "react-icons/md";
-
+import React from "react";
 function Projects() {
-  const [width, setWidth] = useState(0);
-  const [pro_1, setPro_1] = useState(false);
-  const [pro_2, setPro_2] = useState(false);
-  const [pro_3, setPro_3] = useState(false);
-  const [pro_4, setPro_4] = useState(false);
-
-  function w() {
-    setWidth(window.innerWidth);
-  }
-  window.addEventListener("resize", w);
-  useEffect(() => {
-    w();
-    return window.removeEventListener("resize", w);
-  }, []);
-  const decesion = width < 768 ? true : false;
-  console.log(pro_1);
 
   return (
     <section className="projects" id="projects">
