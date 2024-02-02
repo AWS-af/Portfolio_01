@@ -122,17 +122,17 @@ body {
     top: -200px;
     border-radius: 100px;
     transition: all 400ms ease-in-out;
-     &_container{
+    &_container {
       width: 100%;
       height: 100%;
-      @include flexCenter(center, center, column );
+      @include flexCenter(center, center, column);
       gap: 40px;
       font-size: text-sizes(md);
       font-weight: bolder;
-      & a{
+      & a {
         text-decoration: none;
         color: $text-color;
-        &:hover{
+        &:hover {
           color: rgb(125, 125, 125);
         }
       }
@@ -242,11 +242,21 @@ body {
       width: 100%;
       @include flexCenter(space-between, center, column);
       gap: 30px;
-      & .first_project{
-        background-image: url('./assets/project_1.png');
-        background-size: 100%;
+      & .first_project {
+        background-image: url("./assets/project_1.png");
+        background-size: 100% 100%;
         background-position: top;
-        opacity: 0.8;
+        opacity: 0.7;
+      }
+      & .second_project{
+        background-image: url("./assets/project_2.png");
+        background-size: 100% 100%;
+        opacity: 0.9;
+      }
+      & .third_project{
+        background-image: url('./assets/project_3.png');
+        background-size: 100% 100%;
+
       }
       & .project_card {
         width: 100%;
@@ -270,10 +280,8 @@ body {
           left: -100%;
           color: rgb(255, 255, 255);
           transition: all 400ms ease-in-out;
-        background-color: rgba(23, 23, 23, 0.768);
-
-
-          & .project_close{
+          background-color: rgba(23, 23, 23, 0.768);
+          & .project_close {
             width: 40px;
             position: absolute;
             top: 8%;
@@ -479,17 +487,23 @@ body {
       width: 80%;
       height: fit-content;
       padding: padding-size(lg) padding-size(xl);
-      & .warper{
-        .project_card{
+      & .warper {
+        .project_card {
           width: 100%;
           height: 300px;
         }
       }
-      & .first_project{
+      & .first_project {
         width: 100%;
         height: 100%;
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
+      }
+      & .second_project{
+        height: 100%;
+        width: 100%;
+        background-repeat: round;
       }
     }
   }

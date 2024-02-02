@@ -28,54 +28,61 @@ function Projects() {
             className="project_card first_project"
             onClick={() => (decesion ? setPro_1((prev) => !prev) : null)}
           >
-            <div
-              className={
-                pro_1 ? "project_info_click project_info" : "project_info"
-              }
-            >
-              <h3 className="project_title">ToDo App</h3>
-              <p className="project_bio">
-                Simple todo app that can help you keep track of your daily
-                plans, simply create, edit, mark as finished or delete a plan.
-              </p>
-              <div className="project_languages">
-                <span>
-                  <RiJavascriptFill />
-                </span>
-                <span>
-                  <FaSass />
-                </span>
-                <span>
-                  <FaReact />
-                </span>
+            <a href="https://github.com/AWS-af/To-Do-List">
+              <div
+                className={
+                  pro_1 ? "project_info_click project_info" : "project_info"
+                }
+              >
+                <h3 className="project_title">ToDo App</h3>
+                <p className="project_bio">
+                  Simple todo app that can help you keep track of your daily
+                  plans, simply create, edit, mark as finished or delete a plan.
+                </p>
+                <div className="project_languages">
+                  <span>
+                    <RiJavascriptFill />
+                  </span>
+                  <span>
+                    <FaSass />
+                  </span>
+                  <span>
+                    <FaReact />
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div
             className="project_card second_project"
             onClick={() => (decesion ? setPro_2((prev) => !prev) : null)}
           >
-            <div
-              className={
-                pro_2 ? "project_info_click project_info" : "project_info"
-              }
-            >
-              <h3 className="project_title">Title</h3>
-              <p className="project_bio">
-                Some information about the project i did.
-              </p>
-              <div className="project_languages">
-                <span>
-                  <RiJavascriptFill />
-                </span>
-                <span>
-                  <FaSass />
-                </span>
-                <span>
-                  <FaReact />
-                </span>
+            <a href="https://github.com/AWS-af/Weather-app">
+              <div
+                className={
+                  pro_2 ? "project_info_click project_info" : "project_info"
+                }
+              >
+                <h3 className="project_title">Weather App</h3>
+                <p className="project_bio">
+                  Simple weather app made using API. It porvides real-time
+                  weather updates with precision and efficiency. Stay informed
+                  about the current weather conditions, tempreature, humidity
+                  and forcast at your finger tips.
+                </p>
+                <div className="project_languages">
+                  <span>
+                    <RiJavascriptFill />
+                  </span>
+                  <span>
+                    <FaSass />
+                  </span>
+                  <span>
+                    <FaReact />
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div className="warper">
@@ -83,27 +90,30 @@ function Projects() {
             className="project_card third_project"
             onClick={() => (decesion ? setPro_3((prev) => !prev) : null)}
           >
-            <div
-              className={
-                pro_3 ? "project_info_click project_info" : "project_info"
-              }
-            >
-              <h3 className="project_title">Title</h3>
-              <p className="project_bio">
-                Some information about the project i did.
-              </p>
-              <div className="project_languages">
-                <span>
-                  <RiJavascriptFill />
-                </span>
-                <span>
-                  <FaSass />
-                </span>
-                <span>
-                  <FaReact />
-                </span>
+            <a href="https://github.com/AWS-af/Portfolio_01">
+              <div
+                className={
+                  pro_3 ? "project_info_click project_info" : "project_info"
+                }
+              >
+                <h3 className="project_title">Portfolio</h3>
+                <p className="project_bio">
+                  My own Portfolio that i designed with a lot of thinking you
+                  can find all the information about me ther. Hope you like it!
+                </p>
+                <div className="project_languages">
+                  <span>
+                    <RiJavascriptFill />
+                  </span>
+                  <span>
+                    <FaSass />
+                  </span>
+                  <span>
+                    <FaReact />
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div
             className="project_card fourth_project"
