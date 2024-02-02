@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { RiJavascriptFill } from "react-icons/ri";
-import { FaReact, FaSass, FaTimes } from "react-icons/fa";
+import { FaReact, FaSass } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 
 function Projects() {
   const [width, setWidth] = useState(0);
@@ -18,128 +19,30 @@ function Projects() {
     return window.removeEventListener("resize", w);
   }, []);
   const decesion = width < 768 ? true : false;
+  console.log(pro_1);
 
   return (
     <section className="projects" id="projects">
-      <h3 className="projects_title">Some of My Projects</h3>
+      <h2 className="projects_title">Some of My Projects</h2>
       <div className="projects_container">
         <div className="warper">
-          <div
-            className="project_card first_project"
-            onClick={() => (decesion ? setPro_1((prev) => !prev) : null)}
-          >
-            <a href="https://github.com/AWS-af/To-Do-List">
-              <div
-                className={
-                  pro_1 ? "project_info_click project_info" : "project_info"
-                }
-              >
-                <h3 className="project_title">ToDo App</h3>
-                <p className="project_bio">
-                  Simple todo app that can help you keep track of your daily
-                  plans, simply create, edit, mark as finished or delete a plan.
-                </p>
-                <div className="project_languages">
-                  <span>
-                    <RiJavascriptFill />
-                  </span>
-                  <span>
-                    <FaSass />
-                  </span>
-                  <span>
-                    <FaReact />
-                  </span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div
-            className="project_card second_project"
-            onClick={() => (decesion ? setPro_2((prev) => !prev) : null)}
-          >
-            <a href="https://github.com/AWS-af/Weather-app">
-              <div
-                className={
-                  pro_2 ? "project_info_click project_info" : "project_info"
-                }
-              >
-                <h3 className="project_title">Weather App</h3>
-                <p className="project_bio">
-                  Simple weather app made using API. It porvides real-time
-                  weather updates with precision and efficiency. Stay informed
-                  about the current weather conditions, tempreature, humidity
-                  and forcast at your finger tips.
-                </p>
-                <div className="project_languages">
-                  <span>
-                    <RiJavascriptFill />
-                  </span>
-                  <span>
-                    <FaSass />
-                  </span>
-                  <span>
-                    <FaReact />
-                  </span>
-                </div>
-              </div>
-            </a>
+            <div className="project_card first_project">
+              <h3 className="project_header">ToDo App</h3>
+              <a href="https://github.com/AWS-af/To-Do-List" className="project_link" target="_blank">a</a>
+            </div>
+          <div className="project_card second_project">
+            <h3 className="project_header">Weather App</h3>
+            <a href="https://github.com/AWS-af/Weather-app" className="project_link" target="_blank">a</a>
           </div>
         </div>
         <div className="warper">
-          <div
-            className="project_card third_project"
-            onClick={() => (decesion ? setPro_3((prev) => !prev) : null)}
-          >
-            <a href="https://github.com/AWS-af/Portfolio_01">
-              <div
-                className={
-                  pro_3 ? "project_info_click project_info" : "project_info"
-                }
-              >
-                <h3 className="project_title">Portfolio</h3>
-                <p className="project_bio">
-                  My own Portfolio that i designed with a lot of thinking you
-                  can find all the information about me ther. Hope you like it!
-                </p>
-                <div className="project_languages">
-                  <span>
-                    <RiJavascriptFill />
-                  </span>
-                  <span>
-                    <FaSass />
-                  </span>
-                  <span>
-                    <FaReact />
-                  </span>
-                </div>
-              </div>
-            </a>
+          <div className="project_card third_project">
+            <h3 className="project_header">Personal Portfolio</h3>
+            <a href="https://github.com/AWS-af/Portfolio_01" className="project_link" target="_blank">a</a>
           </div>
-          <div
-            className="project_card fourth_project"
-            onClick={() => (decesion ? setPro_4((prev) => !prev) : null)}
-          >
-            <div
-              className={
-                pro_4 ? "project_info_click project_info" : "project_info"
-              }
-            >
-              <h3 className="project_title">Title</h3>
-              <p className="project_bio">
-                Some information about the project i did.
-              </p>
-              <div className="project_languages">
-                <span>
-                  <RiJavascriptFill />
-                </span>
-                <span>
-                  <FaSass />
-                </span>
-                <span>
-                  <FaReact />
-                </span>
-              </div>
-            </div>
+          <div className="project_card fourth_project">
+            <h3 className="project_header">Discord clone coming soon</h3>
+            <a href="https://github.com/AWS-af/Discord-Clone" className="project_link" target="_blank">a</a>
           </div>
         </div>
       </div>
